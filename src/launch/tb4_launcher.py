@@ -83,8 +83,6 @@ def get_ros2_nodes(*args):
         arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'base_footprint'],
     )
 
-    # Replace broken spawner CLI with direct service calls via TimerAction.
-    # The driver needs ~10s to register hardware before controllers can load.
     load_jsb = TimerAction(period=10.0, actions=[ExecuteProcess(
         cmd=['ros2', 'service', 'call',
              '/controller_manager/load_controller',

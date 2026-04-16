@@ -17,7 +17,7 @@ sudo apt install webots
 Alternatively, download the `.deb` installer directly from the [Webots releases page](https://github.com/cyberbotics/webots/releases) and install it:
 
 ``` shell
-# Example for R2025a
+# for R2025a
 wget https://github.com/cyberbotics/webots/releases/download/R2025a/webots_2025a_amd64.deb
 sudo apt install ./webots_2025a_amd64.deb
 ```
@@ -84,3 +84,5 @@ Moving around:
    j    k    l
    m    ,    .
 ```
+
+![Simulation screenshot](assets/sim_env.png)
